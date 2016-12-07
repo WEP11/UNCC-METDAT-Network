@@ -1,0 +1,280 @@
+/* Global */
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*font-family: Verdana, Arial, Helvetica, sans-serif; */
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 10pt;
+    background-color: #000000;
+    /* background-image: url('backgrounds/band.gif'); */
+    background-repeat: repeat;
+    background-attachment: scroll;
+    color:#FFFFFF;
+}	
+
+#container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#masthead { position:relative; background:linear-gradient(#00703C, black); z-index: -1;
+		}
+
+#masthead h1 {
+    color: #FFFFFF;text-align: center; margin-top:0px; margin-bottom:0px; padding-top:15px;
+}
+
+#masthead h2 {
+      font: italic 24px "times new roman"; text-align: center; color: #FFFFFF; margin-top:0px; margin-bottom:15px; padding-top:5px;
+}
+
+#masthead h3 {
+    color: #d4c3a8;text-align: center;
+}
+
+#schoolLogo {position: absolute; left:0px; top:0px;}
+
+#navtabs {
+ margin: 0;
+ padding-top: 10px;
+ position:relative;
+ text-align:center;
+ /*display: inline-block;*/
+ }	
+#navtabs li {
+ display:inline; height:50px;
+ }
+ #navtabs li a {
+ text-decoration: none;
+ /*padding: 0.05em 0.05em;*/
+ } 
+ a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.navigate
+{
+    font:  bold italic 15px sans-serif;
+    text-decoration: none;
+    position: relative;
+    padding: 7px 16px;
+    border: 1px solid #0066CC;
+    border-bottom-color:#0066CC;
+    color: #00FF00;
+    background: #000000 url(tabbg.gif) 0 0 repeat-x;
+    border-radius: 3px 3px 0 0;
+    outline:none;
+}
+        
+.navigate:hover
+{
+	font: bold 15px sans-serif;
+    border: 2px dashed #00FF00;
+    background:#000000;
+}
+/*ALERTER STYLE (turning off until service developed)
+#campusAlerts{
+	margin-top: 30px;
+	margin-right: 20px;
+	margin-left: 13px;
+	border-top: 1px solid #002400;
+    border-right: 1px solid #002400;
+    border-bottom: 1px solid #002400;
+    border-left: 1px solid #002400;
+    background-color: #000000;
+    font: bolder 18px courier; 
+    color:#00FF00;
+}
+#alerter{
+	font: 18px courier; 
+    color:#FFFF00;
+    display: inline-block;
+   }*/
+#chart_div {
+ 	text-align:center;
+}
+#charts {
+    width: 62%;
+    min-height: 500px;
+    margin: 1%;
+    padding: 5px;
+    float: right;
+    border-top: 1px solid #dcdcdc;
+    border-right: 1px solid #a9a9a9;
+    border-bottom: 1px solid #808080;
+    border-left: 1px solid #a9a9a9;
+    background-color: #000000;
+    text-align: center;
+}
+
+#stats_group {
+    width: 25%;
+    min-height: 500px;
+    margin: 1%;
+    padding: 5px;
+    float: left;
+    /*border-top: 1px solid #002400;
+    border-right: 1px solid #002400;
+    border-bottom: 1px solid #002400;
+    border-left: 1px solid #002400;*/
+    background-color: #000000;
+}
+.stats table {
+    border: thin solid #003F00;
+    width: 100%;
+}
+.stats td {
+    border: thin dotted #001F00;
+    padding: 5px;
+}
+
+.stats_header  {
+    background-color: #000000;
+    text-align:center;
+    font: bolder 18px courier; 
+    color:#00FF00;
+}
+
+.stats_label {
+    color: #00FF00;
+    text-align: right;
+}
+
+.stats_data {
+	font: bold 14px arial;
+    color: #FF0000;
+}
+.climo
+{
+    font: normal 10px courier;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 1px;
+    border: 1px solid #0066CC;
+    border-bottom-color:#0066CC;
+    color: #00FF00;
+    background: #000000 url(tabbg.gif) 0 0 repeat-x;
+    border-radius: 3px 3px 0 0;
+    outline:none;
+    text-align:center;
+    width:30%;
+    display:inline-block;
+}
+        
+.climo:hover
+{
+	font: bold 10px courier;
+    border: 1px dotted #FFFF00;
+    background:#000000;
+}
+
+
+
+#CHARTS {
+	float: right;
+	margin: 1%;
+    padding: 5px;
+}
+
+#tabs,#tabs2,#tabs3,#tabs4,#tabs5 {
+	/*width: 500px;*/
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+#tabs li a,#tabs2 li a,#tabs3 li a,#tabs4 li a,#tabs5 li a {
+	display: block;
+	padding: 17px 30px;
+	background: #544f6b;
+	text-decoration: none;
+	color: #8478B3;
+}
+
+#tabs li a:hover,#tabs2 li a:hover,#tabs3 li a:hover,#tabs4 li a:hover,#tabs5 li a:hover {
+	background: rgb(78, 74, 99);
+}
+
+
+
+
+/* Tab Content - menucool.com */
+
+ul.tabs
+{
+    padding: 7px 0;
+    font-size: 0;
+    margin:0;
+    list-style-type: none;
+    text-align: left; /*set to left, center, or right to align the tabs as desired*/
+}
+        
+ul.tabs li
+{
+    display: inline;
+    margin: 0;
+    margin-right:3px; /*distance between tabs*/
+}
+        
+ul.tabs li a
+{
+    font: normal 12px courier;
+    text-decoration: none;
+    position: relative;
+    padding: 7px 16px;
+    border: 1px solid #0066CC;
+    border-bottom-color:#0066CC;
+    color: #00FF00;
+    background: #000000 url(tabbg.gif) 0 0 repeat-x;
+    border-radius: 3px 3px 0 0;
+    outline:none;
+}
+        
+ul.tabs li a:visited
+{
+    color: #000;
+}
+        
+ul.tabs li a:hover
+{
+	font: bold 12px courier;
+    border: 1px solid #B7B7B7;
+    background:#000000;
+}
+        
+ul.tabs li.selected a, ul.tabs li.selected a:hover
+{
+    position: relative;
+    top: 0px;
+    font-weight:bold;
+    background: #000000;
+    border: 1px solid #00FF00;
+    border-bottom-color: #00FF00;
+}
+        
+        
+ul.tabs li.selected a:hover
+{
+    text-decoration: none;
+}
+     
+
+div.tabcontents
+{
+    border: 1px solid #000000; padding: 30px;
+    background-color:#000000;
+    border-radius: 0 3px 3px 3px;
+    border-top: 1px solid #002400;
+    border-right: 1px solid #002400;
+    border-bottom: 1px solid #002400;
+    border-left: 1px solid #002400;
+}
+#controlMech
+{
+	float:right;
+	text-align:right;
+	margin:2%
+}

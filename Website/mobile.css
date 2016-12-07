@@ -1,0 +1,100 @@
+/* Mobile Page Style */
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    /*font-family: Verdana, Arial, Helvetica, sans-serif; */
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 10pt;
+    background-color: #000000;
+    /* background-image: url('backgrounds/band.gif'); */
+    background-repeat: repeat;
+    background-attachment: scroll;
+}	
+ a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+/*ALERTER STYLE (turning off until service developed)*/
+#campusAlerts{
+	margin-top: 30px;
+	margin-right: 20px;
+	margin-left: 13px;
+	border-top: 1px solid #002400;
+    border-right: 1px solid #002400;
+    border-bottom: 1px solid #002400;
+    border-left: 1px solid #002400;
+    background-color: #000000;
+    font: bolder 18px courier; 
+    color:#00FF00;
+}
+#alerter{
+	font: 18px courier; 
+    color:#FFFF00;
+    display: inline-block;
+   }
+
+#stats_group {
+    width: 90%;
+    min-height: 500px;
+    margin: 1%;
+    padding: 5px;
+    float: left;
+    /*border-top: 1px solid #002400;
+    border-right: 1px solid #002400;
+    border-bottom: 1px solid #002400;
+    border-left: 1px solid #002400;*/
+    background-color: #000000;
+}
+.stats table {
+    border: thin solid #003F00;
+    width: 100%;
+}
+.stats td {
+    border: thin dotted #001F00;
+    padding: 5px;
+}
+
+.stats_header  {
+    background-color: #000000;
+    text-align:center;
+    font: bolder 18px courier; 
+    color:#00FF00;
+}
+
+.stats_label {
+    color: #00FF00;
+    text-align: right;
+}
+
+.stats_data {
+	font: bold 14px arial;
+    color: #FF0000;
+}
+.climo
+{
+    font: normal 10px courier;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 1px;
+    border: 1px solid #0066CC;
+    border-bottom-color:#0066CC;
+    color: #00FF00;
+    background: #000000 url(tabbg.gif) 0 0 repeat-x;
+    border-radius: 3px 3px 0 0;
+    outline:none;
+    text-align:center;
+    width:30%;
+    display:inline-block;
+}
+        
+.climo:hover
+{
+	font: bold 10px courier;
+    border: 1px dotted #FFFF00;
+    background:#000000;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>UNC Charlotte Wx</title>
+		<link rel="stylesheet" type="text/css" href="main.css"/>
+		<!--Load the AJAX API-->
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-54843224-1', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		</script>
+	</head>
+    
+	<body>
+		<div id="backgroundImg" style="position:absolute; z-index:-10;">
+			<img src="res/unccwxslide.png" align="middle" width="100%" height="100%">
+		</div>
+		<div id="masthead">
+			<h1>University of North Carolina at Charlotte</h1>
+			<h2>Campus Weather Portal</h2>
+		</div>
+		<div id="schoolLogo">
+			<p align="right">
+				<a href="http://www.uncc.edu/"><img id = "school" src="http://weather.uncc.edu/src/UNCC_Crown_Logo_1c.png"  width="80%" height="80%"/></a>
+			</p>
+		</div>
+		<ul id="navtabs">
+			<li id="navtab1" class="navigate"><a href="http://weather.uncc.edu/">Wx Station</a></li>
+			<li id="navtab2" class="navigate"><a href="http://weather.uncc.edu/obs/">Observations</a></li>
+			<li id="navtab3" class="navigate"><a href="http://weather.uncc.edu/radar/">Radar Room</a></li>
+			<li id="navtab4" class="navigate"><a href="http://weather.uncc.edu/models">Model Output</a></li>
+			<li id="navtab5" class="navigate"><a href="http://weather.uncc.edu/climate">Climate</a></li>
+			<li id="navtab6" class="navigate"><a href="http://weather.uncc.edu/res">Resources</a></li>
+			<li id="navtab7" class="navigate"><a href="http://weather.uncc.edu/faq">Contact Us...</a></li>
+		</ul>
+		<br>
+		<br>
+		<iframe id="text-frame" src="http://weather.uncc.edu/data/NOAA/NOAA-2015-04.txt" style="width:80%; float:left;"> </iframe>
+		<div id=controlMech>
+			<h4 style="color:#000000;">Text Summaries</h4>
+			Monthly
+			<select id="monthly">
+			</select>
+			<br>
+			<br>
+			<script>
+				function setURL(){
+					var e = document.getElementById("monthly");
+					var strUser = e.options[e.selectedIndex].value;
+				    document.getElementById('text-frame').src = strUser;
+				}
+			</script>
+		
+			<button id="grab" type="button" onclick="setURL()">Get it</button>
+		</div> 
+		
+		<script>
+			document.getElementById('text-frame').style.background='rgba(255,255,255,0.60)';
+			document.getElementById("text-frame").height = "790";
+			$(function () 
+		  {
+		    //-----------------------------------------------------------------------
+		    // 2) Send a http request with AJAX http://api.jquery.com/jQuery.ajax/
+		    //-----------------------------------------------------------------------
+		    $.ajax({                                      
+		      url: 'getText.php',                  //the script to call to get data          
+		      data: "",                        //you can insert url argumnets here to pass to api.php
+		                                       //for example "id=5&parent=6"
+		      dataType: 'json',                //data format      
+		      success: function(data)          //on recieve of reply
+		      {
+		        for(var i=2; i < data.length;i++)
+				{
+				//creates option tag
+				dataLabel = data[i].slice(5,15);
+				dataLabel = dataLabel.replace(/\.[^/.]+$/, "");
+				  jQuery('<option/>', {
+				        value: "http://weather.uncc.edu/data/NOAA/" + data[i],
+				        html: dataLabel
+				        }).appendTo('#controlMech select'); //appends to select if parent div has id dropdown
+				}
+		      } 
+		    });
+		  }); 
+		</script>
+		
+	</body>
+</html>

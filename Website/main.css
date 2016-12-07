@@ -1,0 +1,352 @@
+/* Global */
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height:100%;
+    /*font-family: Verdana, Arial, Helvetica, sans-serif; */
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 10pt;
+    background-color: #000000;
+    /* background-image: url('backgrounds/band.gif'); */
+    background-repeat: repeat;
+    background-attachment: scroll;
+    color:#FFFFFF;
+}
+
+div#load_screen{
+	background: linear-gradient(#00008F,#00000F);
+	opacity: 1;
+	position: fixed;
+    z-index:10;
+	top: 0px;
+	width: 100%;
+	height: 1600px;
+}
+div#load_screen > div#loading{
+	color:#FFF;
+	width:120px;
+	height:24px;
+	margin: 300px auto;
+}
+#container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#masthead { position:relative; background:rgba(255,0,0,0.0); z-index: 1;
+		}
+
+#masthead h1 {
+    color: #FFFFFF;text-align: center; margin-top:0px; margin-bottom:0px; padding-top:15px;
+}
+
+#masthead h2 {
+      font: italic 24px "times new roman"; text-align: center; color: #FFFFFF; margin-top:0px; margin-bottom:15px; padding-top:5px;
+}
+
+#masthead h3 {
+    color: #d4c3a8;text-align: center;
+}
+
+#schoolLogo {position: absolute; left:0px; top:0px; z-index:2}
+#hazards{
+	text-align:center;
+	margin-left:auto;
+ 	margin-right:auto;
+}
+#navtabs {
+margin: 0;
+ padding-bottom:10px;
+ padding-top: 10px;
+ margin-left:auto;
+ margin-right:auto;
+ position:relative;
+ text-align:center;
+ /*display: inline-block;*/
+ background:rgba(255,255,255,0.2);
+ width:75%;
+ border-radius: 80px 80px 80px 80px;
+ }	
+#navtabs li {
+ display:inline; height:50px;
+ }
+ #navtabs li a {
+ text-decoration: none;
+ /*padding: 0.05em 0.05em;*/
+ } 
+ a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.navigate
+{
+    font:  bold italic 14px sans-serif;
+    text-decoration: none;
+    position: relative;
+    padding: 7px 16px;
+    border: 0px solid #0066CC;
+    border-bottom-color:#0066CC;
+    color: #FFFFFF;
+    background: linear-gradient(#0000AF,#00003F);
+    border-radius: 20px 0px 20px 0;
+    outline:none;
+}
+        
+.navigate:hover
+{
+    background:linear-gradient(#0000AF,#FFFFFF);
+    color: #222222;
+}
+/*ALERTER STYLE (turning off until service developed)
+#campusAlerts{
+	margin-top: 30px;
+	margin-right: 20px;
+	margin-left: 13px;
+	border-top: 1px solid #002400;
+    border-right: 1px solid #002400;
+    border-bottom: 1px solid #002400;
+    border-left: 1px solid #002400;
+    background-color: #000000;
+    font: bolder 18px courier; 
+    color:#00FF00;
+}
+#alerter{
+	font: 18px courier; 
+    color:#FFFF00;
+    display: inline-block;
+   }*/
+#chart_div {
+ 	text-align:center;
+ 	z-index: 1;
+}
+#charts {
+    width: 62%;
+    min-height: 500px;
+    margin: 1%;
+    padding: 5px;
+    float: right;
+    border-top: 1px solid #dcdcdc;
+    border-right: 1px solid #a9a9a9;
+    border-bottom: 1px solid #808080;
+    border-left: 1px solid #a9a9a9;
+    background-color: #000000;
+    text-align: center;
+}
+
+#stats_group {
+    width: 25%;
+    min-height: 500px;
+    margin: 1%;
+    padding: 5px;
+    float: left;
+    /*border-top: 1px solid #002400;
+    border-right: 1px solid #002400;
+    border-bottom: 1px solid #002400;
+    border-left: 1px solid #002400;*/
+    background:rgba(255,255,255,0.60);
+    z-index: 1;
+}
+.stats table {
+    border: thin solid #003F00;
+    width: 100%;
+}
+.stats td {
+    border: thin dotted #001F00;
+    padding: 5px;
+}
+
+.stats_header  {
+    background-color: rgba(255,255,255,0.00);
+    text-align:center;
+    font: normal 16px helvetica;  
+    color:#000000;
+}
+
+.stats_label {
+	font: bold 15px sans-serif;
+    color: #000000;
+    text-align: right;
+}
+
+.stats_data {
+	font: bold 14px sans;
+    color: #CF0000;
+}
+.climo
+{
+    font: bold 12px helvetica;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 1px;
+    border: 1px solid #0066CC;
+    border-bottom-color:#0066CC;
+    color: #FFFFFF;
+    background: linear-gradient(#0000BF,#00003F);
+    border-radius: 10px 10px 10px 10px;
+    outline:none;
+    text-align:center;
+    width:30%;
+    display:inline-block;
+}
+        
+.climo:hover
+{
+	background: linear-gradient(#0000BF,#0000FF);
+}
+
+
+
+#CHARTS {
+	float: right;
+	margin: 1%;
+    padding: 5px;
+}
+
+#tabs,#tabs2,#tabs3,#tabs4,#tabs5 {
+	/*width: 500px;*/
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+#tabs li a,#tabs2 li a,#tabs3 li a,#tabs4 li a,#tabs5 li a {
+	display: block;
+	padding: 17px 30px;
+	background: #544f6b;
+	text-decoration: none;
+	color: #8478B3;
+}
+
+#tabs li a:hover,#tabs2 li a:hover,#tabs3 li a:hover,#tabs4 li a:hover,#tabs5 li a:hover {
+	background: rgb(78, 74, 99);
+}
+
+
+
+
+/* Tab Content - menucool.com */
+
+ul.tabs
+{
+    padding: 7px 0;
+    font-size: 0;
+    margin:0;
+    list-style-type: none;
+    text-align: left; /*set to left, center, or right to align the tabs as desired*/
+}
+        
+ul.tabs li
+{
+    display: inline;
+    margin: 0;
+    margin-right:3px; /*distance between tabs*/
+}
+        
+ul.tabs li a
+{
+	font: bold 12px helvetica;
+    text-decoration: none;
+    position: relative;
+    padding: 7px 16px;
+    border: 2px solid #0000FF;	
+    border-bottom-color:#0066CC;
+    color: #000000;
+    background: rgba(255,255,255,0.6);
+    border-radius: 10px 10px 0 0;
+    outline:none;
+}
+        
+ul.tabs li a:visited
+{
+    color: #000;
+}
+        
+ul.tabs li a:hover
+{
+	 background:linear-gradient(rgba(255,255,255,0.6),#AAFF00);
+}        
+        
+ul.tabs li.selected a, ul.tabs li.selected a:hover
+{
+    position: relative;
+    top: 0px;
+    background: linear-gradient(#AAAAAF,#00FF00);
+    border: 3.5px solid #FF8800;	
+    border-bottom-color:#CC9900;
+}
+        
+        
+ul.tabs li.selected a:hover
+{
+    text-decoration: none;
+}
+     
+
+div.tabcontents
+{
+    border: 1px solid #000000; padding: 30px;
+    background-color:#FFFFFF;
+    border-radius: 0 40px 40px 40px;
+    border-top: 0px solid #002400;
+    border-right: 0px solid #002400;
+    border-bottom: 0px solid #002400;
+    border-left: 0px solid #002400;
+}
+#controlMech
+{
+	float:right;
+	color: #000000;
+	text-align:right;
+	background:rgba(255,255,255,0.20);
+	border-radius: 10px 10px 10px 10px;
+	margin-right:20px;
+	padding:10px;
+}
+#footer {
+	width: 100%;
+	bottom:0;
+	background: #336699;
+	float: left;
+	margin: 0 0 .5% 0;
+	box-shadow: 5px 5px 10px #202020;
+	text-align:center;
+}
+
+#wrapper {
+   min-height:100%;
+   position:relative;
+}
+.slide-out-div {
+          padding: 20px;
+          width: 250px;
+          background: #ccc;
+          border: 1px solid #29216d;
+} 
+/* ADVISORY BOX FORMATTING */
+.advisoryBox {
+color: black;
+font-size: 12px;
+text-align: center;
+background-color: #FFE991;
+margin: 0 0 0 0;
+padding: .5em 0em .5em 0em;
+border: 1px dashed rgb(34,70,79);
+}
+.advisoryBoxnoactive {
+color: black;
+font-size: 12px;
+text-align: center;
+background-color: white;
+margin: 0 0 0 0;
+padding: .5em 0em .5em 0em;
+border: 1px dashed rgb(34,70,79);
+}
+
+.currentIcon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
