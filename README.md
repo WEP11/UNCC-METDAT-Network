@@ -21,6 +21,8 @@ TODO: A System Diagram would be cool
   Having a weather display isn't cool without live data, and that is just what the outstanding folks at Unidata have allowed the university community to do for many years. Bear in mind, the LDM is useless to you unless you are a university (thus you can connect to the IDD) or you have your own NOAAPort setup (A.K.A. You've got more funding than I ever did). Included are just our config files for LDM, the rest you can get from Unidata pretty easily.
   
 6. **Unidata GEMPAK (http://www.unidata.ucar.edu/)**
+
   I sense a trend here.. Plotting all of the cool live data is the GEMPAK program. Yeah, it's a little dated now, but there might be a second life for it through AWIPS-II (keep your faces pressed to the Met-News for that one). Here are my various plotting scripts.
 7. **Python Python Python (https://www.python.org/)**
+
   Python's pretty cool. Here are some more scripts I've used/been working on that provide even more cool stuff for our system.
