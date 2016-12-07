@@ -1,4 +1,0 @@
-shopt -s extglob
-rm /home/wxdisplay/UPPER_DISPLAY/LEFT/!(12.png)
-rm /home/wxdisplay/UPPER_DISPLAY/RIGHT/!(12.png)
-shopt -u extglob
